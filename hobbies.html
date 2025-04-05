@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEAK</title>
+    <link rel="icon" href="logo-transparent.png" type="icon/x-image">
+    <style>
+        body {
+            background-image: url(bg.jpg);
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed; 
+            min-height: 95vh; 
+            font-family: arial, sans-serif;
+        }
+        nav, footer, section {
+            border: 1px solid white;
+        }
+        header {
+            text-align: center;
+            color: white;
+            min-height: 50px;
+        }
+        .text {
+            position: absolute;
+            top: 4%;
+            left: 3%;
+            right: 3%;
+            margin-top: 0;
+        }
+        nav {
+            border-radius: 20px;
+            margin-top: 2vh;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(51, 51, 51);
+            height: 40px; 
+            gap: 15px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: small;
+            margin-top: 1%;
+        }
+        .underline {
+            text-decoration: none;
+        }
+        @media (max-width: 600px) {
+            a {
+                text-decoration: none;
+                color: white;
+                margin-top: 3%;
+            }
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .grid-item {
+            background-color: rgb(51, 51, 51);
+            color: white;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            font-size: 20px;
+            border: 1px solid white;
+        }
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: repeat(1, 1fr); /* Switch to 1 column on small screens */
+            }
+        }
+        .container {
+            text-align: left;
+            display: block;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        .h1 {
+            margin-top: 1vh;
+        }
+        section {
+            background-color: rgb(87, 87, 87);
+            border-radius: 20px;
+            color: white;
+            width: 90%;
+            padding: 2%;
+            font-size: medium;
+        }
+        table {
+            margin: auto;
+            border-radius: 15px;
+        }
+        table, td {
+            border: 1px solid white;
+            border-radius: 20px;
+            padding: 25px;
+        }
+        footer {
+            background-color: rgb(51, 51, 51);
+            color: white;
+            text-align: center;
+            font-size: medium;
+            height: 40px;
+            margin: 2vh;
+            align-items: center;
+            display: flex;
+            position: relative;
+        }
+        @media (max-width: 600px) {
+            .footer {
+            text-align: center;
+            margin-left: 30vw;
+            }
+        }
+        @media (min-width: 768px) {
+            .footer {
+            margin-left: 45%;
+            }
+        }
+        .logo {
+            height: 20%;
+            width: 20%;
+        }
+        @media (max-width: 600px) {
+            .logo {
+                height: 45%;
+                width: 45%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="text_hobbies.png" alt="logo">
+    </header>
+    <nav>
+        <a class="underline" href="index.html">HOME</a>
+        <a class="underline" href="about_us.html">ABOUT US</a>
+        <a href="education.html" class="underline">EDUCATION</a>
+        <a href="contact_us.html" class="underline">CONTACT US </a>
+    </nav>
+<div class="grid-container">
+        <div class="grid-item">
+            <div class="container">
+                <h2 class="h1">MARK: </h2>
+                    <section>
+                        <ul>
+                            <li>BINGE WATCHING</li>
+                                <details>
+                                    <p>I feel engaged, relaxed &amp; excited depending on what I'm watching. </p>
+                                        </details>
+                            <li>LISTENING TO MUSIC</li>
+                                <details>
+                                    <p>Music can evoke my emotions, set moods, and even influence thoughts.</p>
+                                </details>
+                            <li>PLAYING ONLINE GAMES</li>
+                                <details>
+                                    <p>Playing online games would be a mix of fun and challenge. I feel exciting to compete, rewarding to improve my skills, and enjoyable to explore different virtual worlds.</p>
+                                </details>
+                        </ul>
+                    </section>  
+            </div>       
+        </div>
+        <div class="grid-item">
+            <h2>Symbols, Emojis &amp; Entities</h2>
+            <table>
+                <tr>
+                    <td>&#128520;</td>
+                    <td>&#128521;</td>
+                    <td>&#128522;</td>
+                </tr>
+                <tr>
+                    <td>&copy;</td>
+                    <td>&trade;</td>
+                    <td>&euro;</td>
+                </tr>
+                <tr>
+                    <td>&#8721;</td>
+                    <td>&#8704;</td>
+                    <td>&#8709;</td>
+                </tr>
+            </table>
+                <p style="text-align: center;">Favorite emojis, special characters &amp; symbol entities.</p>
+        </div>
+    <div class="grid-item">
+        <div class="container">
+            <h2 class="h1">GEMAR: </h2>
+                <section>
+                    <ul>
+                        <li>VOLLEYBALL</li>
+                            <details>
+                                <p>Playing VOLLEYBALL gives me passion &amp; it helps me forget my problems &amp; it gives me comfort.</p>
+                            </details>
+                        <li>LISTENING TO MUSIC</li>
+                            <details>
+                                <p>It is one of my coping mechanisms when I am having mental breakdown.</p>
+                            </details>
+                        <li>ANIME/SERIES</li>
+                            <details>
+                                <p>Japanese productions of animations/animes hypes up my imagination &amp; it sends my imagination to out of this world.</p>
+                            </details>
+                    </ul>
+                </section>  
+        </div>    
+    </div>
+    <div class="grid-item">
+        <h2>Symbols, Emojis &amp; Entities</h2>
+        <table>
+            <tr>
+                <td>&#127952;</td>
+                <td>&#127918;</td>
+                <td>&#128640;</td>
+            </tr>
+            <tr>
+                <td>&lt;</td>
+                <td>&yen;</td>
+                <td>&gt;</td>
+            </tr>
+            <tr>
+                <td>&#9829;</td>
+                <td>&#9830;</td>
+                <td>&#9827;</td>
+            </tr>
+        </table>
+            <p style="text-align: center;">Favorite emojis, special characters &amp; symbol entities.</p>
+    </div>
+</div>    
+    <footer>
+        <p class="footer"> &copy; All Rights Reserved</p>
+    </footer>
+</body>
+</html>

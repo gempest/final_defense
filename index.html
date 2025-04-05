@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEAK</title>
+    <link rel="icon" href="logo-transparent.png" type="icon/x-image">
+    <style>
+        body {
+            background-image: url(bg.jpg);
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed; 
+            min-height: 95vh; 
+            font-family: arial, sans-serif;
+        }
+        nav, footer {
+            border: 1px solid white;
+        }
+        header {
+            text-align: center;
+            color: white;
+        }
+        .text {
+            position: absolute;
+            top: 3%;
+            left: 3%;
+            right: 3%;
+        }
+
+        iframe {
+            border: 2px solid white;
+            gap: 20px ;
+            position:relative;
+            margin: 0 auto;
+            border-radius: 20px;
+        }
+        nav {
+            border-radius: 20px;
+            margin-top: 2vh;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(51, 51, 51);
+            height: 40px; 
+            gap: 15px;
+            margin-bottom: 2vh;
+            font-size: smaller;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            margin-top: 1%;
+        }
+        .underline {
+            text-decoration: none;
+        }
+        @media (max-width: 600px) {
+            a {
+                text-decoration: none;
+                color: white;
+                margin-top: 3%;
+            }
+        }
+        table {
+            margin-top: 2vh;
+            margin: auto;
+            background-color: rgb(51, 51, 51);
+        }
+        table,tr {
+            border-radius: 20px;
+            border: 1px solid white;
+            padding: 2px;
+            margin-bottom: 2vh;
+            width: 50vh;
+            text-align: center;
+            height: 1vh;
+        }
+        footer {
+            background-color: rgb(51, 51, 51);
+            color: white;
+            text-align: center;
+            font-size: medium;
+            height: 40px;
+            margin: 2vh;
+            align-items: center;
+            display: flex;
+            position: relative;
+        }
+        @media (max-width: 600px) {
+            p {
+            text-align: center;
+            margin-left: 28vw;
+            }
+        }
+        @media (min-width: 768px) {
+            p {
+            margin-left: 45%;
+            }
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 3 equal columns */
+            gap: 20px;
+            padding: 20px;
+        }
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: repeat(1, 1fr); /* Switch to 1 column on small screens */
+            }
+            iframe {
+                height: 50vh;
+                width: 80vw;
+                position: relative;
+                margin: 0 auto;
+            }
+        }
+        select {
+            border-radius: 20px;
+            width: 20px;
+        }
+        option {
+            border-radius: 20px;
+        }
+        .logo {
+            height: 10%;
+            width: 10%;
+        }
+        @media (max-width: 600px) {
+            .logo {
+                height: 25%;
+                width: 25%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="textfx.png" alt="logo">
+    </header>
+    <nav>
+        <a class="underline" href="about_us.html">ABOUT US</a>
+        <a class="underline" href="education.html">EDUCATION</a>
+        <a href="hobbies.html" class="underline">HOBBIES</a>
+        <a href="contact_us.html" class="underline">CONTACT US </a>
+    </nav>
+
+    
+   <table class="margin">
+    <tr>
+        <td> 
+            <h2 style="font-size: large; color: white;" id="entertainment">ENTERTAINMENT
+                <select name="name" id="" onchange="location.href=this.value">
+                    <option value=""></option>
+                    <option value="#education">EDUCATIONAL</option>
+                    <option value="#sports">SPORTS</option>
+                    <option value="#games">ONLINE GAMES</option>
+                    <option value="#health">LIFESTYLE</option>
+                </select>
+            </h2> 
+        </td>
+        
+    </tr>
+   </table>
+
+
+    <div class="grid-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fG07I9UlnoI?si=OYjxv9fVgzlS4OAW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hRlwLWmB2JI?si=mqqWNFte-4PrBudJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/C0zMWogztQs?si=DLzCXwZoMp-C4iAY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/IpFX2vq8HKw?si=X4G-F5LJkp9ql7E7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GgwUenaQqlM?si=8ZIl9C-1jCYkw5Bc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-pHfPJGatgE?si=CyHzyvr8Ns1bIrL2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <br>
+    <table>
+        <tr>
+            <td> 
+                <h2 style="font-size: large; color: white;" id="education">EDUCATIONAL
+                    <select name="name" id="" onchange="location.href=this.value">
+                        <option value=""></option>
+                        <option value="#entertainment">ENTERTAINMENT</option>
+                        <option value="#sports">SPORTS</option>
+                        <option value="#games">ONLINE GAMES</option>
+                        <option value="#health">LIFESTYLE</option>
+                    </select>
+                </h2>
+             </td>
+        </tr>
+       </table>
+    <div class="grid-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/it1rTvBcfRg?si=26Blht_ID3Jc7WLz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/AGDDdsiZ0Ko?si=z1NGzUeC5Ul6UL0f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dTp0c41XnrQ?si=x3uGn3k0WlRNfMX8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/s0g4ty29Xgg?si=jWRJ6X8EAKobWWIS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XZrckLYqdys?si=2GoJGYS1dIyzAah0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hJHvdBlSxug?si=3p46m6dg0NT0AqCQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dTp0c41XnrQ?si=x3uGn3k0WlRNfMX8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/s0g4ty29Xgg?si=jWRJ6X8EAKobWWIS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XZrckLYqdys?si=2GoJGYS1dIyzAah0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hJHvdBlSxug?si=3p46m6dg0NT0AqCQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <br>
+    <table>
+        <tr>
+            <td>
+                <h2 style="font-size: large; color: white;" id="sports">SPORTS
+                    <select name="name" id="" onchange="location.href=this.value">
+                        <option value=""></option>
+                        <option value="#entertainment">ENTERTAINMENT</option>
+                        <option value="#education">EDUCATIONAL</option>
+                        <option value="#games">ONLINE GAMES</option>
+                        <option value="#health">LIFESTYLE</option>
+                    </select>
+                </h2> 
+            </td>
+        </tr>
+       </table>
+       <div class="grid-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ujEaGYoHoXE?si=f-5xlYOWW2xDVWZZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wYjp2zoqQrs?si=NZmppF6yqP2C6vTj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/MXuiRYeWvUA?si=BY9NyAHZrhBlimKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OWCkPbzq81g?si=xEKVtNU1KYKZq4ga" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       </div>
+       <table>
+        <tr>
+            <td> 
+                <h2 style="font-size: large; color: white;" id="games">ONLINE GAMES
+                    <select name="name" id="" onchange="location.href=this.value">
+                        <option value=""></option>
+                        <option value="#entertainment">ENTERTAINMENT</option>
+                        <option value="#education">EDUCATIONAL</option>
+                        <option value="#sports">SPORTS</option>
+                        <option value="#health">LIFESTYLE</option>
+                    </select>
+                </h2> 
+            </td>
+        </tr>
+       </table>
+       <div class="grid-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GQL8YDs6uNA?si=th5WoP0T-8fnmzdO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-cSFPIwMEq4?si=dVrwMs1XvFSV0L7G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/aR-KAldshAE?si=Q93-CaT11nh9t2lt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_JWJgS00hfk?si=0mROBHYrNjVSewO-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wxw14pLOp10?si=G_WNp4E415PgaYVd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hobpDrungfc?si=fkCnZfPihJIPjQY3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       </div>
+       <table>
+        <tr>
+            <td> 
+                <h2 style="font-size: large; color: white;" id="health">LIFESTYLE
+                    <select name="name" id="" onchange="location.href=this.value">
+                        <option value=""></option>
+                        <option value="#entertainment">ENTERTAINMENT</option>
+                        <option value="#education">EDUCATIONAL</option>
+                        <option value="#sports">SPORTS</option>
+                        <option value="#games">ONLINE GAMES</option>
+                    </select>
+                </h2> 
+            </td>
+        </tr>
+       </table>
+       <div class="grid-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HLDPA3FTUJ4?si=QkY3Rl3yM61NdP6S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Cqg8tQH4U8M?si=y3EpPgFDFmJ04Qb1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/U73zgH8QpOk?si=hmWcKo13TwJ9DEgF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Uc9HnJVyrqE?si=8O0aQ6Cnjahus-7e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       </div>
+
+
+
+    <footer>
+        <p> &copy; All Rights Reserved</p>
+    </footer>
+    
+</body>
+</html>

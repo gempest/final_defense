@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEAK</title>
+    <link rel="icon" href="logo-transparent.png" type="icon/x-image">
+    <style>
+        body {
+            background-image: url(bg.jpg);
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed; 
+            min-height: 95vh; 
+            font-family: arial, sans-serif;
+        }
+        nav, section, footer {
+            border: 1px solid white;
+        }
+        header {
+            text-align: center;
+            color: white;
+        }
+        nav {
+            border-radius: 20px;
+            margin-top: 2vh;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(51, 51, 51);
+            height: 40px; 
+            gap: 15px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: small;
+            margin-top: 1%;
+        }
+        @media (max-width: 600px) {
+            a {
+                text-decoration: none;
+                color: white;
+                margin-top: 3%;
+            }
+            main {
+                justify-content: center;
+                text-align: justify;
+            }
+        }
+        .underline {
+            text-decoration: none;
+        }
+        section {
+            background-color: rgb(87, 87, 87);
+            border-radius: 20px;
+            color: white;
+            width: 88%;
+            margin: 0 auto;
+            padding: 2%;   
+        }
+        .margin {
+            margin-top: 3vh;
+        }
+        .summary {
+            background-color: rgb(87, 87, 87);
+            border-radius: 20px;
+            color: white;
+            right: 3%;
+            text-align: justify;
+            font-size: medium;
+        }
+        .p {
+            text-align: left;
+            margin-left: 20%;
+        }
+        select {
+            border-radius: 10px;
+            width: 20px;
+        }
+        option {
+            border-radius: 10px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 3 equal columns */
+            gap: 20px;
+            padding: 20px;
+        }
+        .grid-item {
+            background-color: rgb(51, 51, 51);
+            color: white;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            font-size: 20px;
+            border: 1px solid white;
+        }
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: repeat(1, 1fr); /* Switch to 1 column on small screens */
+            }
+            .margin {
+                font-size: medium;
+            }
+        }
+        footer {
+            background-color: rgb(51, 51, 51);
+            color: white;
+            text-align: center;
+            font-size: medium;
+            height: 40px;
+            margin: 2vh;
+            align-items: center;
+            display: flex;
+            position: relative;
+        }
+        @media (max-width: 600px) {
+            .align {
+            text-align: left;
+            margin: 0 auto;
+            margin-left: 15%;
+            }
+            .footer {
+            text-align: center;
+            margin-left: 30vw;
+            }
+        }
+        @media (min-width: 768px) {
+            .align {
+                text-align: left;       
+                margin: 0 auto;
+                margin-left: 30%;
+                font-size: medium;
+            }
+            .footer {
+            margin-left: 45%;
+            }
+        }
+        .frame {
+            text-align: center;
+            width: 100%;
+            height: 58vh;
+            background-color: rgb(51, 51, 51);
+            border-radius: 10px;
+            border: 1px solid white;
+        }
+        @media (max-width: 600px) {
+            iframe {
+                height: 288px;
+                flex-wrap: wrap;
+            }
+            .frame {
+                width: 86vw;
+                margin: 0 auto;
+            }
+        }
+        article, details {
+            text-align: left;
+        }
+        .h1 {
+            margin-top: 1px;
+        }
+        .logo {
+            height: 10%;
+            width: 10%;
+        }
+        @media (max-width: 600px) {
+            .logo {
+                height: 25%;
+                width: 25%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="textfx.png" alt="logo">
+    </header>
+    
+    
+    <nav>
+        <a href="index.html" class="underline">HOME </a>
+        <a href="education.html" class="underline">EDUCATION </a>
+        <a href="hobbies.html" class="underline">HOBBIES</a>
+        <a href="contact_us.html" class="underline">CONTACT US </a>
+    </nav>
+    <div class="grid-container">
+        <div class="grid-item">
+            <h1 class="h1">About Us</h1>
+            <section class="margin">
+                <article> CAREER</article>
+                <div class="summary">Mark V. Rosales is a passionate individual driven by curiosity and a love for learning. 
+                    He has a deep interest in the world, which motivates him to seek knowledge across various fields.
+                    He enjoys reading articles online to stay informed and expand his understanding of different topics. 
+                    Whether for academic purposes or personal growth, he immerses himself in research and strives to apply what he learns in meaningful ways.
+                    Creativity and innovation inspire him, pushing him to think outside the box and embrace new experiences. 
+                    He believes that growth comes from stepping out of one's comfort zone and facing challenges head-on.
+                    His enthusiasm for discovery fuels his desire for continuous improvement and adaptability in an ever-changing 
+                    world. At his core, he values knowledge, exploration, and the endless possibilities that learning brings..
+                </div>
+            </section>
+            <section class="margin">
+                <article> Expertise</article>
+                <details>
+                    <li>LEADERSHIP</li>
+                    <li>COMMITMENT</li>
+                    <li>C PROGRAMMING</li>
+                    <li>C++ PROGRAMMING</li>
+                    <li>HTML</li>
+                </details>
+            </section>
+        </div>
+        <div class="grid-item">
+            <aside >
+                <h2 class="h1">Profile
+                    <select name="name" id="" onchange="location.href=this.value">
+                        <option value=""></option>
+                        <option value="about_us.html">GEMAR</option>
+                    </select></h2>
+                <img src="mrk-modified.png" alt="handsome" height="50%" width="50%">
+            </aside>
+            <aside class="align">
+                <p>
+                    NAME: MARK V. ROSALES <br>
+                    AGE: 21 <br>
+                    BIRTH DATE: 03/29/2003 <br>
+                    ADDRESS: 265-B SANCIANGKO ST. <br>
+                    CEBU CITY, CEBU CITY 6000 <br>
+                    EMAIL: rosalesmark04@gmail.com <br>
+                    CONTACT: 09684984984
+                </p>
+            </aside>
+        </div>
+      </div>
+
+    </div>
+    <main class="frame">
+        <h2 class="margin" style="color: white; text-align: center;">Address Location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d409.5520253835341!2d123.89172957072795!3d10.296529995424152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDE3JzQ3LjUiTiAxMjPCsDUzJzMxLjEiRQ!5e1!3m2!1sen!2sph!4v1742026128204!5m2!1sen!2sph" width="100%" height="288" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+    <br>
+    <footer>
+     <p class="footer"> &copy; All Rights Reserved </p>
+
+    </footer>
+</body>
+</html>
